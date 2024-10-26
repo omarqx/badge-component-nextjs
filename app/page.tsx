@@ -72,11 +72,11 @@ function Badge({ variant, size }: { variant: variant, size: size }) {
 export default function Home() {
   return (
     <main className="min-h-screen py-[200px] flex justify-center">
-      <section className="w-60 h-[236px] justify-start items-center gap-6 flex grid grid-cols-3 gap-4">{variants.map((variant) => {
+      <section className="w-60 h-[236px] justify-start items-center grid grid-cols-3 gap-6">{variants.map((variant) => {
         return (
           sizes.map((size) => {
             return (
-              <div key={variant + size} className="w-60 justify-start items-center gap-6 inline-flex">
+              <div key={variant + size} className="justify-start items-center gap-6 inline-flex">
                 <Badge variant={variant} size={size} />
               </div>
             )
