@@ -60,7 +60,7 @@ const sizeTextTranslator = (size: size) => {
 }
 
 
-export function Badge({ variant, size }: { variant: variant, size: size }) {
+function Badge({ variant, size }: { variant: variant, size: size }) {
   return (
     <div className={`${sizeContainerTranslator(size)} ${variantContainerTranslator(variant)} rounded-full border justify-start items-center`}>
       <div className={`${variantTextTranslator(variant)} ${sizeTextTranslator(size)} text-center  font-normal`}>Label</div>
