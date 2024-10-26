@@ -7,9 +7,9 @@ const sizes: size[] = ["small", "medium", "large"];
 const sizeContainerTranslator = (size: size) => {
   switch (size) {
     case "small":
-      return 'h-5 px-1.5 py-0.5';
+      return 'h-5 px-1.5 py-1';
     case "medium":
-      return 'h-6 px-2 py-0.5'
+      return 'h-6 px-2 py-1'
     case "large":
     default:
       return 'h-7 px-2.5 py-1';
@@ -71,7 +71,7 @@ function Badge({ variant, size }: { variant: variant, size: size }) {
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-center items-center">
+    <main className="min-h-screen py-[200px] flex justify-center items-center">
       <section className="w-60 h-[236px] justify-start items-center gap-6 flex grid grid-cols-3 gap-4">{variants.map((variant) => {
         return (
           sizes.map((size) => {
